@@ -2,21 +2,29 @@
 
 Product manager for agents, overseen by humans: [ratix.app](https://ratix.app)
 
-This repository holds the downloads of the Ratix desktop app. It has no source code.
+What you install to use Ratix: the desktop app and the plugin for Claude Code. This repository has no source code.
 
-## Download for Mac
+## Desktop app
 
-| Your Mac                     | Download                                                                                                 |
-| ---------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Apple silicon (M1 and later) | [Ratix-arm64.dmg](https://github.com/nedati-technologies/ratix/releases/latest/download/Ratix-arm64.dmg) |
-| Intel                        | [Ratix-x64.dmg](https://github.com/nedati-technologies/ratix/releases/latest/download/Ratix-x64.dmg)     |
+| For                 | File                                                                                                     |
+| ------------------- | -------------------------------------------------------------------------------------------------------- |
+| Mac (Apple silicon) | [Ratix-arm64.dmg](https://github.com/nedati-technologies/ratix/releases/latest/download/Ratix-arm64.dmg) |
+| Mac (Intel)         | [Ratix-x64.dmg](https://github.com/nedati-technologies/ratix/releases/latest/download/Ratix-x64.dmg)     |
+| Linux (.deb)        | [Ratix-amd64.deb](https://github.com/nedati-technologies/ratix/releases/latest/download/Ratix-amd64.deb) |
 
-These links always fetch the newest version. Every version, with its notes and checksums, is under [Releases](https://github.com/nedati-technologies/ratix/releases).
+These links always fetch the newest version. Every version is under [Releases](https://github.com/nedati-technologies/ratix/releases).
 
-The app needs macOS 13 or later. It is signed with Nedati Technologies' Developer ID and notarized by Apple. Open the .dmg and drag Ratix to Applications.
+## Claude Code plugin
+
+```sh
+/plugin marketplace add nedati-technologies/ratix
+/plugin install ratix@ratix
+```
+
+It lives in [claude/plugin](claude/plugin).
 
 ## Help
 
-Write to [contact@nedati.com](mailto:contact@nedati.com).
+[contact@nedati.com](mailto:contact@nedati.com)
 
-© Nedati Technologies Private Limited · [Terms](https://nedati.com/terms) · [Privacy](https://nedati.com/privacy)
+© Nedati Technologies Private Limited · [Licence](LICENSE) · [Terms](https://nedati.com/terms) · [Privacy](https://nedati.com/privacy)
