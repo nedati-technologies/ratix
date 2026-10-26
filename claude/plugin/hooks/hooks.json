@@ -1,0 +1,30 @@
+{
+  "description": "Ratix: report the connection at session start, and before any other tool require it and upgrade older files (decisions 64 and 66).",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/ratix.mjs\" hook session-start",
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "plugin:ratix:ratix",
+            "tool": "ratix_gate",
+            "input": { "toolName": "${tool_name}" },
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

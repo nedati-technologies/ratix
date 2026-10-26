@@ -1,0 +1,13 @@
+{
+  "name": "ratix",
+  "owner": {
+    "name": "Nedati Technologies"
+  },
+  "plugins": [
+    {
+      "name": "ratix",
+      "source": "./claude/plugin",
+      "description": "Connect Claude Code to Ratix as a named agent identity."
+    }
+  ]
+}
