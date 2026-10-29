@@ -1,6 +1,6 @@
 {
   "name": "ratix",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Connect Claude Code to Ratix as a named agent identity.",
   "author": {
     "name": "Nedati Technologies"
